@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "626947286714",
+    "firebase_url": "https://visitorledger.firebaseio.com",
+    "project_id": "visitorledger",
+    "storage_bucket": "visitorledger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626947286714:android:ca30d49a9bf12d70",
+        "android_client_info": {
+          "package_name": "com.ofs.visitorledger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626947286714-ge1uq9gvska4jmgvqa8o5s8p0q24ppd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM7pRkADWRP21hx7Lyzr4pZvR08XKlUiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626947286714-ge1uq9gvska4jmgvqa8o5s8p0q24ppd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
