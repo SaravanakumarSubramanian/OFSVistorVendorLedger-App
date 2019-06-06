@@ -227,15 +227,16 @@ class VisitorDetailsState extends State<VisitorDetails>{
 
     handleVisitorEntry(context){
         Map<String, dynamic> visitorEntryMap = new Map<String, dynamic>();
-        visitorEntryMap['visitor_name']=visitorName.text;
-        visitorEntryMap['visitor_mobile_number']=visitorMobileNumber.text;
-        visitorEntryMap['visitor_email']=visitorEmail.text;
+        visitorEntryMap['name']=visitorName.text;
+        visitorEntryMap['mobile']=visitorMobileNumber.text;
+        visitorEntryMap['email']=visitorEmail.text;
         visitorEntryMap['purpose_of_visit']=purposeOfVisit.text;
         visitorEntryMap['contact_person']=contactPerson.text;
-        visitorEntryMap['visitor_id']=visitorIdNumber.text;
+        visitorEntryMap['temporary_id']=visitorIdNumber.text;
         visitorEntryMap['visitor_type']=selectedVisitorType.type;
         visitorEntryMap['visitor_id_proof_type']=selectedIdProofType.idProofType;
-        visitorEntryMap['visitor_location']=selectedLocation.location;
+        visitorEntryMap['location']=selectedLocation.location;
+        visitorEntryMap['entry_type']="Visitor";
 
         DocumentReference visitorEntry =
         firestore.collection('Visitor Entry').document(initTime);
