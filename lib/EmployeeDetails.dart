@@ -37,14 +37,15 @@ class EmployeeDetailsState extends State<EmployeeDetails>{
     handleEmployeeEntry(context){
 
         Map<String, dynamic> employeeEntryMap = new Map<String, dynamic>();
-        employeeEntryMap['employee_name']=employeeName.text;
+        employeeEntryMap['name']=employeeName.text;
         employeeEntryMap['employee_id']=employeeId.text;
-        employeeEntryMap['employee_mobile']=employeeNumber.text;
+        employeeEntryMap['mobile']=employeeNumber.text;
         employeeEntryMap['temporary_id']=temporaryId.text;
-        employeeEntryMap['Location']=dropdownValue;
+        employeeEntryMap['location']=dropdownValue;
+        employeeEntryMap['entry_type']="Employee";
 
         DocumentReference employeeEntry =
-        firestore.collection('Employee Entry').document(new DateTime.now().millisecondsSinceEpoch.toString());
+        firestore.collection('Visitor Entry').document(new DateTime.now().millisecondsSinceEpoch.toString());
 
        firestore.runTransaction((transaction) async {
             await transaction.set(employeeEntry, employeeEntryMap);
